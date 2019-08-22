@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Suddn.Pages.SuddnDashboard">
+    <ContentPage.Content>
+       <!--  <Grid
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+          -->
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100px" />
+                        <RowDefinition Height="100px" />
+                        
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width= "*"/>
+                    </Grid.ColumnDefinitions>
+
+                    
+                   
+                    
+                      <Button
+                        x:Name="lbl1"
+                        VerticalOptions="Center"
+                       
+                        HorizontalOptions ="Center"
+                        Text="one"
+                        Grid.Row="0"
+                        Grid.Column="0" />
+                
+                      <Button
+                        x:Name="lbl2"
+                        VerticalOptions="Center"
+                    HorizontalOptions ="Center"
+                   
+                        Text="one"
+                        Grid.Row="0"
+                        Grid.Column="2" />
+
+                      <Button
+                        x:Name="lbl3"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Center"
+                    
+                        Text="three"
+                        Grid.Row="1"
+                        Grid.Column="1" />
+                </Grid>
+            <!--</Grid>-->
+    </ContentPage.Content>
+</ContentPage>

@@ -1,20 +1,17 @@
-﻿using System;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Suddn.Services;
-using Suddn.Views;
-
+using Suddn.Pages;
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Suddn
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
